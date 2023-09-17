@@ -20,7 +20,6 @@
   color: #3a3a3a;
   font-size: 1.6rem;
   flex: 1;
-  margin: 0 1.5rem;
   color: white;
 }
 
@@ -32,6 +31,22 @@
   border: 1px solid white;
   padding: 1rem;
   border-radius: 1.2rem;
+}
+
+.delete-button {
+  background-color: transparent;
+  border: none;
+  color: white;
+  font-size: 1.2rem;
+  cursor: pointer;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  border: 1px solid white;
+  transition: all 0.3s ease;
+}
+
+.delete-button:hover {
+  background-color: #b09600;
 }
 
 @media (min-width: 580px) {
