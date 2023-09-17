@@ -16,10 +16,10 @@ const ExpensesFilter = ({ onFilterChange, selected }) => {
           onChange={handleFilterChange}
         >
           <option value='all'>All Expenses</option>
-          <option value='2022'>2023</option>
-          <option value='2021'>2022</option>
-          <option value='2020'>2021</option>
-          <option value='2019'>2020</option>
+          <option value='2023'>2023</option>
+          <option value='2022'>2022</option>
+          <option value='2021'>2021</option>
+          <option value='2020'>2020</option>
         </select>
       </div>
     </div>

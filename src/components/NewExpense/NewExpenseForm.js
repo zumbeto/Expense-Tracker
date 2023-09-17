@@ -1,11 +1,10 @@
 import React, { useState, useEffect, useRef } from 'react';
 import './NewExpenseForm.css';
 
-const NewExpenseForm = ({ onNewExpenseDataSave }) => {
+const NewExpenseForm = ({ onNewExpenseDataSave, onCancel }) => {
   const [newTitle, setNewTitle] = useState('');
   const [newAmount, setNewAmount] = useState('');
   const [newDate, setNewDate] = useState('');
-
   const [hasError, setHasError] = useState(false);
   const errorTimeoutRef = useRef(null); // Store the timeout reference
 
@@ -93,6 +92,12 @@ const NewExpenseForm = ({ onNewExpenseDataSave }) => {
       </div>
       <div className='new-expense__actions'>
         <button type='submit'>Add Expense</button>
+        <button
+          type='button'
+          onClick={onCancel}
+        >
+          Cancel
+        </button>
       </div>
       {hasError && <p className='error-message'>Please fill in all the fields!</p>}
     </form>

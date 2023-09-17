@@ -5,3 +5,9 @@
   width: 70rem;
   max-width: 95%;
 }
+
+.no-results-message {
+  font-size: 1.2rem;
+  color: white;
+  text-align: center;
+}
