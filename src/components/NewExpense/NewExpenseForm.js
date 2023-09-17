@@ -38,7 +38,7 @@ const NewExpenseForm = ({ onNewExpenseDataSave, onCancel }) => {
 
     const newExpenseData = {
       title: newTitle,
-      amount: newAmount,
+      amount: +newAmount,
       date: new Date(newDate),
     };
 
