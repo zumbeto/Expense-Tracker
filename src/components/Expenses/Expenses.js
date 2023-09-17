@@ -7,14 +7,16 @@ import ExpensesChart from './ExpensesChart';
 import ExpensesCalculator from './ExpensesCalculator';
 import './Expenses.css';
 
-const Expenses = ({ expensesData }) => {
+const Expenses = ({ expensesData, onDeleteExpense }) => {
   const [filteredYear, setFilteredYear] = useState('all');
 
   const handleFilterValue = (selectedYear) => {
     setFilteredYear(selectedYear);
   };
 
-  const filteredExpenses = expensesData.filter((expense) => {
+  const sortedExpenses = expensesData.sort((a, b) => b.date - a.date);
+
+  const filteredExpenses = sortedExpenses.filter((expense) => {
     if (filteredYear === 'all') {
       return expense;
     } else {
@@ -30,7 +32,10 @@ const Expenses = ({ expensesData }) => {
           onFilterChange={handleFilterValue}
         />
         <ExpensesChart expensesData={filteredExpenses} />
-        <ExpensesList expensesData={filteredExpenses} />
+        <ExpensesList
+          expensesData={filteredExpenses}
+          onDeleteExpense={onDeleteExpense}
+        />
         <ExpensesCalculator expensesData={filteredExpenses} />
       </Card>
     </div>
