@@ -1,9 +1,16 @@
 .chart {
-  padding: 1.5rem;
+  padding: 0.5rem;
   border-radius: 1.2rem;
   background-color: #f8dfff;
   text-align: center;
   display: flex;
   justify-content: space-around;
   height: 15rem;
+}
+
+@media screen and (min-width: 580px) {
+  .chart {
+    padding: 1.5rem;
+    height: 20rem;
+  }
 }

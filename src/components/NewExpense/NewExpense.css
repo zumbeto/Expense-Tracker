@@ -2,7 +2,7 @@
   background-color: #8f6dff;
   padding: 1.5rem;
   margin: 2.5rem auto;
-  width: 70rem;
+  width: 80rem;
   max-width: 95%;
   border-radius: 1.2rem;
   text-align: center;
@@ -20,7 +20,6 @@
   background-color: #b09600;
   color: white;
   border-radius: 1.2rem;
-  margin-right: 1.5rem;
   transition: all 0.3s ease;
 }
 

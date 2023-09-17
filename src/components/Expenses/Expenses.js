@@ -4,6 +4,7 @@ import Card from '../UI/Card';
 import ExpensesList from './ExpensesList';
 import ExpensesFilter from './ExpensesFilter';
 import ExpensesChart from './ExpensesChart';
+import ExpensesCalculator from './ExpensesCalculator';
 import './Expenses.css';
 
 const Expenses = ({ expensesData }) => {
@@ -30,6 +31,7 @@ const Expenses = ({ expensesData }) => {
         />
         <ExpensesChart expensesData={filteredExpenses} />
         <ExpensesList expensesData={filteredExpenses} />
+        <ExpensesCalculator expensesData={filteredExpenses} />
       </Card>
     </div>
   );
