@@ -1,5 +1,9 @@
 # Expenses Tracker
 
+![previews](public/app-previews.png)
+
+---
+
 ## Table of Contents
 
 - [General Info](#general-info)
